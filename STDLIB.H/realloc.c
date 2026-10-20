@@ -10,6 +10,7 @@ int main()
     int *arr = malloc(5 * sizeof(int));
 
     // его расширение до 10 элементов
+    // void* realloc(void* ptr, size_t size)
     int *temp = realloc(arr, 10 * sizeof(int));
 
     arr = temp;
